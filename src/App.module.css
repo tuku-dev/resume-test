@@ -1,0 +1,15 @@
+:root {
+  --sidebar: 250px;
+}
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
+.wrapper .sidebar {
+  width: var(--sidebar);
+  font-size: 14px;
+  border-right: 1px solid #ddd;
+}
+.workArea {
+  width: calc(100% - var(--sidebar));
+}

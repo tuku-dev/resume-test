@@ -1,0 +1,48 @@
+:root {
+  --pad: 8px 5px;
+}
+.logo {
+  padding: var(--pad);
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 5px;
+}
+.sidebarInner {
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  height: 100%;
+}
+.myTemplate,
+.searchSection,
+.myBoards,
+.points {
+  padding: var(--pad);
+  padding-bottom: 0;
+}
+.userSection {
+  padding: var(--pad);
+  border-top: 1px solid #ddd;
+  margin-top: auto;
+}
+.listItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.points {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.points .listItem .imgIcon {
+  width: 16px;
+  height: 16px;
+}
+.listItem .text {
+  flex: 1 0 0;
+}
+.listItem .text.bold {
+  font-weight: bold;
+}

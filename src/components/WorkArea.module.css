@@ -1,0 +1,48 @@
+.workAreaInner {
+  max-width: 960px;
+  margin: 25px auto 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.premiumAccount {
+  background: #008b5d;
+  border-radius: 8px;
+  padding: 24px;
+  gap: 16px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.premiumAccount .logoArea {
+  background: #fff;
+  border-radius: 50%;
+  min-width: 72px;
+  min-height: 72px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.premiumAccount h2 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+.premiumAccount p {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.informationSection h2 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+.informationForm {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+}
