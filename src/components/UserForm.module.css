@@ -1,16 +1,12 @@
-:root {
-  --linkColor: #1688fe;
-}
 .row {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  column-gap: 12px;
-  row-gap: 16px;
+  row-gap: 14px;
   justify-content: space-between;
 }
 .row .col {
-  min-width: calc(50% - 12px);
+  min-width: calc(50% - 10px);
 }
 .row .col.full {
   min-width: 100%;
@@ -39,7 +35,6 @@
 }
 .hrefLink {
   color: var(--linkColor);
-  text-decoration: none;
 }
 .submitButton {
   background-color: var(--linkColor);
@@ -50,7 +45,14 @@
   border: none;
   width: 100%;
 }
-.chkboxFor {
+.chkFor {
   margin-left: 10px;
   font-size: 13px;
+}
+.validate {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  height: 16px;
 }

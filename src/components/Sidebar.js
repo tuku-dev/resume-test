@@ -25,7 +25,6 @@ const MenuItem = (props) => {
 };
 
 const Sidebar = () => {
-  console.log(config);
   return (
     <div className={styles.sidebarInner}>
       <div className={styles.logo}>

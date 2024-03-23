@@ -36,6 +36,40 @@ const WorkArea = (props) => {
             <Image imgUrl={"/imgs/personal-image.png"} text={"Person Image"} />
           </div>
         </div>
+        <div className={styles.deleteAccount}>
+          <h2>Delete Account</h2>
+          <p>
+            If you delete your account you’ll be permanently removing it from
+            our systems - you can’t undo it.
+          </p>
+          <p>
+            <a href="!#" className={styles.deleteLink}>
+              Yes, Delete my account
+            </a>
+          </p>
+        </div>
+        <p>
+          <a href="!#" className={styles.getInTouch}>
+            Get in touch with our support team
+          </a>{" "}
+          if you have any question or want to leave some feedback. We'll be
+          happy to hear from you.
+        </p>
+        <hr className={styles.hr} />
+        <ul className={styles.footerLink}>
+          <li className={styles.linkItem}>
+            <a href="!#">Terms & Conditions</a>
+          </li>
+          <li className={styles.linkItem}>
+            <a href="!#">Privacy Policy</a>
+          </li>
+          <li className={styles.linkItem}>
+            <a href="!#">FAQ</a>
+          </li>
+          <li className={styles.linkItem}>
+            <a href="!#">Contact Us</a>
+          </li>
+        </ul>
       </div>
     </div>
   );

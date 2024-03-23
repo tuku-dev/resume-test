@@ -1,8 +1,9 @@
 .workAreaInner {
   max-width: 960px;
-  margin: 25px auto 0;
+  margin: var(--space) auto 0;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 1px;
 }
 .premiumAccount {
   background: #008b5d;
@@ -12,7 +13,7 @@
   display: flex;
   align-items: center;
   color: #fff;
-  margin-bottom: 25px;
+  margin-bottom: var(--space);
 }
 
 .premiumAccount .logoArea {
@@ -39,10 +40,48 @@
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
-  margin-bottom: 25px;
+  margin-bottom: var(--space);
 }
 .informationForm {
   display: flex;
   align-items: flex-start;
-  gap: 25px;
+  gap: var(--space);
+}
+
+.deleteAccount {
+  border: 1px solid #e3e3e4;
+  border-radius: 4px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: var(--space);
+  margin-bottom: var(--space);
+}
+
+.deleteAccount h2 {
+  margin-bottom: 0;
+}
+.deleteAccount .deleteLink {
+  color: #f25773;
+}
+.getInTouch {
+  color: var(--linkColor);
+}
+hr.hr {
+  margin-top: var(--space);
+  margin-bottom: var(--space);
+  border-top: 1px solid #e3e3e4;
+}
+.footerLink {
+  display: flex;
+  padding: 0;
+  align-items: center;
+  gap: var(--space);
+  list-style: none;
+  margin-bottom: var(--space);
+}
+.footerLink a {
+  color: #595964;
+  font-weight: 400;
 }

@@ -1,9 +1,5 @@
-:root {
-  --sidebar: 250px;
-}
 .wrapper {
   display: flex;
-  height: 100vh;
 }
 .wrapper .sidebar {
   width: var(--sidebar);

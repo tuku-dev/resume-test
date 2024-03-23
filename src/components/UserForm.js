@@ -1,6 +1,20 @@
+import { useState } from "react";
 import styles from "./UserForm.module.css";
+import Image from "./Image";
 
 const UserForm = (props) => {
+  const [vEmail, setVEmail] = useState(undefined);
+  const validate = (e) => {
+    if (e.target.value) {
+      let match = false;
+      match = e.target.value.match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+      setVEmail(match);
+    } else {
+      setVEmail(undefined);
+    }
+  };
   return (
     <>
       <form
@@ -82,8 +96,19 @@ const UserForm = (props) => {
                 type="text"
                 name="email"
                 id="email"
+                onChange={validate}
                 className={styles.formControl}
               />
+
+              {vEmail !== undefined && (
+                <span className={styles.validate}>
+                  {vEmail ? (
+                    <Image imgUrl="/imgs/icon-badge-check.png" text="Correct" />
+                  ) : (
+                    <Image imgUrl="/imgs/icon-badge-close.png" text="Wrong" />
+                  )}
+                </span>
+              )}
             </div>
           </div>
           <div className={styles.col}>
@@ -113,7 +138,7 @@ const UserForm = (props) => {
             </div>
           </div>
           <div className={`${styles.col} ${styles.full}`}>
-            <p>
+            <p style={{ marginTop: "-12px" }}>
               Use this email to log in to your{" "}
               <a
                 href="//resumedone.io"
@@ -131,7 +156,7 @@ const UserForm = (props) => {
           </div>
           <div className={`${styles.col} ${styles.full}`}>
             <input type="checkbox" name="share" id="share" />
-            <label htmlFor="share" className={styles.chkboxFor}>
+            <label htmlFor="share" className={styles.chkFor}>
               Show my profile to serious employers on{" "}
               <a
                 href="//hirethesbest.io"
